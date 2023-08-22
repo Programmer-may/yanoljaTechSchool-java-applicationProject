@@ -33,7 +33,7 @@ public class Main {
             MyAddress locationKeyword = getlocation(keyword);
             bw.write("입력한 위치 키워드: " + keyword.getQuery());
             bw.newLine();
-            bw.write("입력한 위치 키워드: " + keyword.getRadius());
+            bw.write("검색 반경: " + String.format("%.1f", (float)keyword.getRadius() / 1000) + "km");
             bw.newLine();
 
             if (locationKeyword != null) {
